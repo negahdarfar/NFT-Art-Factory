@@ -17,7 +17,8 @@
     "objkt:pack": "node scripts/objkt-pack.mjs",
     "readiness": "node scripts/launch-readiness.mjs",
     "demand:research": "node scripts/demand-research.mjs",
-    "growth:campaign": "node scripts/growth-campaign.mjs"
+    "growth:campaign": "node scripts/growth-campaign.mjs",
+    "quality:artwork": "node scripts/artwork-quality.mjs"
   },
   "engines": {
     "node": ">=22"
