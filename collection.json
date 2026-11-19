@@ -1,0 +1,41 @@
+{
+  "name": "The Witness — Genesis Collection",
+  "description": "A curated collection of surreal conceptual digital artworks.",
+  "symbol": "WITNESS",
+  "external_url": "https://github.com/negahdarfar/NFT-Art-Factory",
+  "seller_fee_basis_points": 500,
+  "fee_recipient": "",
+  "items": [
+    {
+      "name": "The Witness",
+      "description": "A surreal conceptual artwork depicting a monumental human eye inside an ornate golden frame, supported by human legs in an empty, desolate landscape beneath a muted sky.",
+      "image": "assets/artworks/the-witness-001.png",
+      "attributes": [
+        {
+          "trait_type": "Edition",
+          "value": "Genesis"
+        },
+        {
+          "trait_type": "Style",
+          "value": "Surrealism"
+        },
+        {
+          "trait_type": "Subject",
+          "value": "The Eye"
+        },
+        {
+          "trait_type": "Frame",
+          "value": "Ornate Gold"
+        },
+        {
+          "trait_type": "Environment",
+          "value": "Desolate Landscape"
+        },
+        {
+          "trait_type": "Mood",
+          "value": "Mysterious"
+        }
+      ]
+    }
+  ]
+}
