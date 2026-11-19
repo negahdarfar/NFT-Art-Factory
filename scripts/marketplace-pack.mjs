@@ -19,9 +19,18 @@ if (!Array.isArray(collection.items) || collection.items.length === 0) fail("col
 
 const config = fs.existsSync(configPath)
   ? JSON.parse(fs.readFileSync(configPath, "utf8"))
-  : { currency: "ETH", chain: "ethereum", price: null, platforms: ["opensea", "rarible"] };
+  : { currency: "XTZ", chain: "tezos", price: null, platforms: ["objkt"] };
 
 const supported = {
+  objkt: {
+    name: "objkt",
+    networkModel: "Tezos; verify the creator wallet, XTZ balance and current contract details before signing.",
+    flow: "Prepare the media and metadata, connect the creator's own supported Tezos wallet on objkt, review the immutable token metadata, mint with the owner's signature, then create and sign the listing separately.",
+    api: "https://docs.objkt.com/product/creating/creator-starter-guide",
+    market: "https://objkt.com/",
+    walletSignatureRequired: true,
+    apiKeyRequired: false
+  },
   opensea: {
     name: "OpenSea",
     networkModel: "EVM and supported non-EVM chains; confirm exact chain and token support.",
