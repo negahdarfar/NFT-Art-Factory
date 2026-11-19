@@ -12,7 +12,10 @@
     "studio": "node scripts/creator-studio.mjs",
     "marketplace:pack": "node scripts/marketplace-pack.mjs",
     "market:research": "node scripts/market-research.mjs",
-    "sales:report": "node scripts/sales-ledger.mjs"
+    "sales:report": "node scripts/sales-ledger.mjs",
+    "marketing:pack": "node scripts/marketing-pack.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }
