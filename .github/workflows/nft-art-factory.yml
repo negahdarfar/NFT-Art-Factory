@@ -31,11 +31,13 @@ jobs:
           find scripts adapters storage worker -type f -name '*.mjs' -print0 | xargs -0 -r -n1 node --check
       - name: Validate governance and catalog JSON
         run: |
-          node -e "for (const f of ['workflows/collection-catalog.example.json','workflows/90-day-operating-profile.json','workflows/collection-concepts.example.json','demand-signals.example.json']) JSON.parse(require('node:fs').readFileSync(f,'utf8')); console.log('Governance and example JSON: valid')"
+          node -e "for (const f of ['workflows/collection-catalog.example.json','workflows/90-day-operating-profile.json','workflows/collection-concepts.example.json','demand-signals.example.json','reviews/review-status.json']) JSON.parse(require('node:fs').readFileSync(f,'utf8')); console.log('Governance and example JSON: valid')"
       - name: Run adapter and intake tests
         run: npm test
       - name: Generate launch readiness report (informational)
         run: npm run readiness
+      - name: Build read-only studio operations dashboard
+        run: npm run studio:status
       - name: Audit artwork integrity and provenance
         run: npm run quality:artwork
       - name: Generate growth campaign drafts
