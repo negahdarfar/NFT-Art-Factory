@@ -1,0 +1,14 @@
+collection.json
+assets/*
+!assets/.gitkeep
+dist/
+.env
+*.pem
+*.key
+*.wallet
+workflows/ai-generation.json
+reviews/review-status.json
+reviews/ai-generation-queue.json
+marketplaces.json
+market-comps.json
+sales-ledger.json
