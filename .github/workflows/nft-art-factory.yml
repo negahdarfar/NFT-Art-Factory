@@ -26,20 +26,12 @@ jobs:
         run: |
           mkdir -p assets
           printf '%s' 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/pWQAAAAASUVORK5CYII=' | base64 -d > assets/artwork-001.png
-      - name: Check JavaScript syntax
+      - name: Check all JavaScript module syntax
         run: |
-          node --check scripts/creator-studio.mjs
-          node --check worker/index.mjs
-          node --check scripts/marketplace-pack.mjs
-          node --check scripts/objkt-pack.mjs
-          node --check scripts/market-research.mjs
-          node --check scripts/sales-ledger.mjs
-          node --check scripts/marketing-pack.mjs
-          node --check scripts/launch-readiness.mjs
-          node --check scripts/demand-research.mjs
-          node --check scripts/growth-campaign.mjs
-          node --check scripts/artwork-quality.mjs
-          node --check scripts/concept-studio.mjs
+          find scripts adapters storage worker -type f -name '*.mjs' -print0 | xargs -0 -r -n1 node --check
+      - name: Validate governance and catalog JSON
+        run: |
+          node -e "for (const f of ['workflows/collection-catalog.example.json','workflows/90-day-operating-profile.json','workflows/collection-concepts.example.json','demand-signals.example.json']) JSON.parse(require('node:fs').readFileSync(f,'utf8')); console.log('Governance and example JSON: valid')"
       - name: Run adapter and intake tests
         run: npm test
       - name: Generate launch readiness report (informational)
