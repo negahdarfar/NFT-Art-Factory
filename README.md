@@ -86,3 +86,7 @@ Run `npm run growth:campaign` to create a bilingual launch-copy pack, 14-day cam
 ## Artwork quality and provenance gate
 
 Run `npm run quality:artwork` to validate image signatures/dimensions, reject missing or unsafe image paths, detect exact duplicate files, and flag low-resolution artwork, incomplete metadata, rights review and provenance gaps. Use `node scripts/artwork-quality.mjs --strict` before a release. This is not an aesthetic score, plagiarism detector or legal clearance. See [the quality and provenance policy](docs/ARTWORK_QUALITY_AND_PROVENANCE.md).
+
+## Curated concept studio
+
+Run `npm run concept:studio` to prepare original art-direction briefs and generation prompts for a coherent surreal collection. The example series is a thematic companion to The Witness with distinct visual metaphors; it does not generate image files or claim market demand. See [the concept studio guide](docs/CONCEPT_STUDIO.md).
