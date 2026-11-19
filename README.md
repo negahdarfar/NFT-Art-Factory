@@ -82,3 +82,7 @@ Copy `demand-signals.example.json` to the private `demand-signals.json`, enter r
 ## Growth campaign engine
 
 Run `npm run growth:campaign` to create a bilingual launch-copy pack, 14-day campaign calendar and KPI tracker for artworks with explicit rights and owner approval. It is draft-only: no posts, DMs, minting, listings or payments are executed. See [the growth and launch playbook](docs/GROWTH_AND_LAUNCH_PLAYBOOK.md).
+
+## Artwork quality and provenance gate
+
+Run `npm run quality:artwork` to validate image signatures/dimensions, reject missing or unsafe image paths, detect exact duplicate files, and flag low-resolution artwork, incomplete metadata, rights review and provenance gaps. Use `node scripts/artwork-quality.mjs --strict` before a release. This is not an aesthetic score, plagiarism detector or legal clearance. See [the quality and provenance policy](docs/ARTWORK_QUALITY_AND_PROVENANCE.md).
