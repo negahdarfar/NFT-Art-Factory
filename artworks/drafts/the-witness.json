@@ -6,11 +6,11 @@
   "rights_confirmed": true,
   "owner_approved": false,
   "image": {
-    "repository_path": "assets/artworks/the-witness-001.jpg",
+    "repository_path": "assets/artworks/the-witness-001.png",
     "original_upload": "1000218630.png",
     "dimensions": "1536x1536",
     "format": "PNG",
-    "note": "Original image received in chat; binary asset still needs to be committed to the repository."
+    "note": "Original PNG received in chat; binary asset is not yet committed to the repository."
   },
   "description": "A surreal conceptual artwork depicting a monumental human eye inside an ornate golden frame, supported by human legs in an empty, desolate landscape beneath a muted sky.",
   "description_fa": "اثری مفهومی و سوررئال از چشمی بزرگ درون قابی طلایی و آراسته که بر دو پای انسانی در دشتی خالی و متروک ایستاده است.",
