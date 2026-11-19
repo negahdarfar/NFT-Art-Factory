@@ -19,9 +19,9 @@
         "nft_art"
       ],
       "priority": 1,
-      "status": "first_candidate_wallet_and_payout_check_required",
+      "status": "geographic_access_confirmed_wallet_and_funding_check_required",
       "requiresCompatibilityCheck": true,
-      "notes": "objkt FAQ states it imposes no geographic restrictions on minting/listing/selling; however applicable laws still apply and external wallet providers, payment services and exchanges have their own country availability. Verify the creator's wallet and lawful payout route before minting."
+      "notes": "Current official objkt FAQ explicitly states no geographic restrictions on minting, listing, selling, or receiving proceeds. External wallet providers, payment/on-ramp services and exchanges retain their own country restrictions. Check applicable law and the provider terms before any transaction."
     },
     {
       "id": "opensea",
@@ -41,9 +41,9 @@
         "collectibles"
       ],
       "priority": 2,
-      "status": "blocked_pending_sanctions_eligibility_review",
+      "status": "blocked_pending_eligibility_review",
       "requiresCompatibilityCheck": true,
-      "notes": "Do not use if creator is located in, ordinarily resident in, or otherwise covered by a jurisdiction/person restriction under current OpenSea terms. Do not bypass geographic, identity, or sanctions controls. Reassess only if creator is legally eligible."
+      "notes": "Do not use unless current terms and the creator's actual legal circumstances confirm eligibility. Never bypass geographic, identity, or sanctions controls."
     },
     {
       "id": "rarible",
