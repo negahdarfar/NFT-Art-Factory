@@ -41,7 +41,7 @@ export function curateConcepts(config) {
       `Distinctiveness: ${concept.distinctiveness_rule}`,
       "Premium museum-grade art direction, deliberate focal hierarchy, refined texture, coherent lighting, controlled negative space, strong silhouette, visually readable at thumbnail size.",
       "No text, lettering, logo, watermark, signature, border, copied composition, copyrighted character, celebrity likeness or imitation of a living artist."
-    ].join("\\n\\n");
+    ].join("\n\n");
     return {
       sequence: index + 1,
       id,
