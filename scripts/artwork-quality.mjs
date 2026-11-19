@@ -136,7 +136,7 @@ function main() {
   };
   const outDir = path.join(root, "dist", "quality-review");
   fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 2) + "\\n");
+  fs.writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 2) + "\n");
   for (const f of report.findings) console.log(`${f.level.toUpperCase()} ${f.code}: ${f.artwork || ""} ${f.message}`);
   console.log(`Artwork quality gate: ${report.status} — ${report.itemCount} item(s), ${report.counts.errors} error(s), ${report.counts.reviewsNeeded} human review item(s).`);
   if (process.argv.includes("--strict") && report.status !== "passed") process.exitCode = 1;
