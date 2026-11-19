@@ -4,5 +4,11 @@
     "rights_confirmed": true,
     "owner_approved": true,
     "notes": "Creator confirmed rights and explicitly requested the artwork be fully registered and presented. Approval covers preparation and promotional drafts; minting, wallet signatures, and live marketplace listing still require the creator's explicit transaction approval."
+  },
+  "The Last Listener": {
+    "status": "pending",
+    "rights_confirmed": false,
+    "owner_approved": false,
+    "notes": "Two image candidates were generated on 2026-11-19. Variant 02 is the current preferred candidate for owner review. Approval, rights basis and final asset selection are pending. No minting, listing, upload or public promotion is authorized."
   }
 }
