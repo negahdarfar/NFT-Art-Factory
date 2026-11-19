@@ -97,3 +97,8 @@ Run `npm run concept:studio` to prepare original art-direction briefs and genera
 The studio's art direction, collection identity and curation rubric are defined in [the Art Direction Bible](docs/ART_DIRECTION_BIBLE.md). Every release must pass the [Global Release Standard](docs/GLOBAL_RELEASE_STANDARD.md), including asset integrity, provenance, rights, owner approval, market eligibility, cost review and action-specific authorization. The [Operating Scorecard](docs/OPERATING_SCORECARD.md) defines evidence-based weekly measurement without treating attention metrics as revenue.
 
 A starter collection catalog is available at [workflows/collection-catalog.example.json](workflows/collection-catalog.example.json). Copy it before making project-specific changes; keep private overrides and credentials out of Git.
+
+
+## Studio operations dashboard
+
+Run `npm run studio:status` to generate a local read-only operations dashboard and JSON report at `dist/studio-dashboard/`. It tracks artwork assets, rights evidence, owner approval and action-specific release gates without minting, listing or publishing. See [the dashboard guide](docs/STUDIO_DASHBOARD.md).
