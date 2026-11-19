@@ -15,7 +15,8 @@
     "sales:report": "node scripts/sales-ledger.mjs",
     "marketing:pack": "node scripts/marketing-pack.mjs",
     "objkt:pack": "node scripts/objkt-pack.mjs",
-    "readiness": "node scripts/launch-readiness.mjs"
+    "readiness": "node scripts/launch-readiness.mjs",
+    "demand:research": "node scripts/demand-research.mjs"
   },
   "engines": {
     "node": ">=22"
