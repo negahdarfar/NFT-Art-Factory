@@ -1,0 +1,89 @@
+{
+  "status": "draft_pending_owner_review",
+  "name": "The Last Listener",
+  "collection": "The Archive of Silence",
+  "subtitle": "A signal of life in a world gone quiet",
+  "description": "Half-buried in a vast, dark salt plain, an old shortwave radio still holds a faint amber glow. From the center of its weathered speaker grille, a small green shoot rises into the last light of day. The work sets the fragile persistence of life against the silence of abandonment: even when no voice answers, something may still begin again.",
+  "image": "assets/the-last-listener.png",
+  "image_asset_status": "generated_in_chat_not_yet_added_to_repository",
+  "image_candidates": [
+    {
+      "variant": "01",
+      "file_name": "a_cinematic_surreal_high_detail_digital_art_scen.png",
+      "dimensions": "1402x1122",
+      "generation_id": "0d7b998b-b4fb-4848-8cf7-047cee54965f",
+      "curation_note": "Atmospheric but includes extra symbols (stone head, butterfly, headphones and ruins); less focused."
+    },
+    {
+      "variant": "02",
+      "file_name": "a_cinematic_highly_detailed_surreal_landscape_sc.png",
+      "dimensions": "1254x1254",
+      "generation_id": "5be71f4d-0961-4bd0-a5cd-367ceb6a03ff",
+      "curation_note": "Preferred candidate: square composition, one dominant radio and sprout, clearer focal hierarchy."
+    }
+  ],
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "The Archive of Silence"
+    },
+    {
+      "trait_type": "Concept",
+      "value": "Hope after silence"
+    },
+    {
+      "trait_type": "Primary object",
+      "value": "Vintage shortwave radio"
+    },
+    {
+      "trait_type": "Symbol",
+      "value": "New growth"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "Charcoal, amber, deep green"
+    },
+    {
+      "trait_type": "Composition",
+      "value": "Square cinematic surrealism"
+    }
+  ],
+  "provenance": {
+    "source": "Original image generated for this project in ChatGPT",
+    "model_or_tool": "OpenAI image generation",
+    "generation_date": "2026-11-19",
+    "selected_variant": "02",
+    "commercial_rights_review": "pending; verify applicable service terms and marketplace rules before listing"
+  },
+  "sale_configuration": {
+    "blockchain": null,
+    "marketplace": null,
+    "edition_supply": null,
+    "price": null,
+    "royalty_basis_points": null,
+    "wallet": null,
+    "note": "Do not infer chain, edition, price, royalty or payout details. Set only after owner review and current marketplace/eligibility/fee checks."
+  },
+  "approval": {
+    "rights_confirmed": false,
+    "owner_approved": false,
+    "final_image_selected": false,
+    "minting_authorized": false,
+    "public_listing_authorized": false
+  },
+  "evaluation": {
+    "strengths": [
+      "Strong central metaphor",
+      "Immediate contrast between decay and new life",
+      "Amber and green focal contrast",
+      "Preferred variant has square 1:1 composition"
+    ],
+    "issues_to_review": [
+      "Check fine details and generated dial markings at full resolution",
+      "Confirm image rights and applicable commercial terms",
+      "Owner must approve exact final variant",
+      "The generated image is not yet stored in the GitHub repository"
+    ],
+    "score": "not numerically scored; requires human art direction review"
+  }
+}
