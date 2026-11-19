@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const configPath = path.join(root, "workflows", "collection-concepts.json");
@@ -94,11 +94,11 @@ function main() {
   };
   const out = path.join(root, "dist", "concept-studio");
   fs.mkdirSync(out, { recursive: true });
-  fs.writeFileSync(path.join(out, "creative-briefs.json"), JSON.stringify(report, null, 2) + "\\n");
+  fs.writeFileSync(path.join(out, "creative-briefs.json"), JSON.stringify(report, null, 2) + "\n");
   fs.writeFileSync(path.join(out, "prompts.md"), result.briefs.map(b => `# ${b.sequence}. ${b.working_title}\n\n${b.generation_prompt}\n\n**Negative prompt:** ${b.negative_prompt}\n`).join("\n---\n\n"));
   console.log(`Concept studio: ${report.status} — ${report.concept_count} brief(s), ${result.issues.length} issue(s).`);
   for (const issue of result.issues) console.log("REVIEW " + issue);
   if (result.issues.length) process.exitCode = 1;
 }
 
-if (process.argv[1] && import.meta.url === new URL("file://" + path.resolve(process.argv[1])).href) main();
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) main();
