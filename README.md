@@ -54,3 +54,8 @@ See [secure provider setup](docs/SETUP_SECRETS.md) and [provider/storage notes](
 - No automatic transaction signing is enabled.
 - A listing or asking price is not proof of a completed sale; sales must be verified on-chain.
 - Provider free tiers have limits and may change.
+
+
+## objkt / Tezos preparation
+
+A safe, draft-only objkt metadata and release checklist generator is available with `npm run objkt:pack`. It never connects a wallet, mints, lists, or signs. See [docs/OBJKT_WORKFLOW.md](docs/OBJKT_WORKFLOW.md). The original artwork binary must be present and pinned before a real mint.
