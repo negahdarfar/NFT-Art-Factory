@@ -28,3 +28,14 @@ Official policy: https://opensea.io/tos
 Do not assume another marketplace is available merely because it supports Tezos or accepts crypto. Before selecting objkt or any alternative, review that marketplace's current terms and sanctions/export rules, and verify creator account eligibility, wallet connection, and lawful payout access. Until then, keep the marketplace unset and do not mint, list, or route proceeds through another person.
 
 This is a compliance safeguard, not legal advice. The creator should obtain qualified legal advice for their specific circumstances before any cross-border sale.
+
+
+## First candidate for an Iran-based creator: objkt (conditional)
+
+As checked on 19 November 2026, objkt's official FAQ says it does not impose geographic restrictions on creating collections, minting, listing, or selling NFTs. The same FAQ warns that external wallet providers, payment services, and exchanges have their own terms and country availability. objkt's Terms still require users to comply with applicable law.
+
+- FAQ: https://middleware.objkt.com/seo/faq
+- Terms: https://objkt.com/terms
+- Marketplace: https://objkt.com/
+
+Therefore objkt is the first marketplace candidate to evaluate, not a guarantee of end-to-end availability. Before minting, confirm that the creator can lawfully use a compatible Tezos wallet, access XTZ, and receive/convert proceeds through permitted services. Never use a third party's identity or wallet to evade restrictions. If those checks pass, prepare a Tezos-specific listing pack and ask the creator to review and sign every wallet transaction.
