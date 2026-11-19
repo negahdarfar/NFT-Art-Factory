@@ -59,3 +59,7 @@ See [secure provider setup](docs/SETUP_SECRETS.md) and [provider/storage notes](
 ## objkt / Tezos preparation
 
 A safe, draft-only objkt metadata and release checklist generator is available with `npm run objkt:pack`. It never connects a wallet, mints, lists, or signs. See [docs/OBJKT_WORKFLOW.md](docs/OBJKT_WORKFLOW.md). The original artwork binary must be present and pinned before a real mint.
+
+## First artwork launch pack
+
+The bilingual presentation, promotional drafts, SEO copy and release checklist for **The Witness — Genesis #001** are in [marketing/THE_WITNESS_LAUNCH_PACK.md](marketing/THE_WITNESS_LAUNCH_PACK.md). This is preparation only; no mint, live listing or public post has been made.
