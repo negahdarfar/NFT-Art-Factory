@@ -19,7 +19,8 @@
     "demand:research": "node scripts/demand-research.mjs",
     "growth:campaign": "node scripts/growth-campaign.mjs",
     "quality:artwork": "node scripts/artwork-quality.mjs",
-    "concept:studio": "node scripts/concept-studio.mjs"
+    "concept:studio": "node scripts/concept-studio.mjs",
+    "studio:status": "node scripts/studio-dashboard.mjs"
   },
   "engines": {
     "node": ">=22"
