@@ -1,0 +1,20 @@
+{
+  "source": "manual",
+  "title": "Example original artwork",
+  "description": "Describe the concept, medium, story, and distinctive details of the artwork.",
+  "creator": "Creator name or studio",
+  "rights_confirmed": false,
+  "file": "assets/my-artwork.png",
+  "tags": ["digital-art", "original"],
+  "attributes": [
+    { "trait_type": "Medium", "value": "Digital" },
+    { "trait_type": "Edition", "value": "1/1" }
+  ],
+  "pricing": {
+    "strategy": "suggest",
+    "amount": null,
+    "currency": null
+  },
+  "target_marketplaces": ["objkt", "opensea", "rarible"],
+  "publish_mode": "draft_only"
+}

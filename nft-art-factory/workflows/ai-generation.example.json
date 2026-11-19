@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "provider": "provider_adapter_required",
+  "model": "select_after_provider_review",
+  "prompt": "Create an original fine-art concept with a distinct visual identity. Do not imitate a living artist or reproduce copyrighted characters, logos, or existing artworks.",
+  "negative_prompt": "watermark, signature, logo, text artifacts, copied composition",
+  "output": {
+    "count": 1,
+    "format": "png",
+    "width": 1024,
+    "height": 1024
+  },
+  "metadata": {
+    "title_style": "curatorial",
+    "description_style": "collector_focused",
+    "tags": ["original", "digital-art"]
+  },
+  "rights_review_required": true,
+  "quality_review_required": true,
+  "publish_mode": "draft_only"
+}

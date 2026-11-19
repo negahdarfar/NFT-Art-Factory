@@ -1,0 +1,11 @@
+name = "nft-art-intake"
+main = "worker/index.mjs"
+compatibility_date = "2026-11-19"
+
+[[r2_buckets]]
+binding = "ARTWORKS"
+bucket_name = "nft-artwork-drafts"
+
+[vars]
+# Replace with the exact HTTPS origin serving the creator dashboard.
+ALLOWED_ORIGIN = "https://YOUR-DASHBOARD-DOMAIN.example"
