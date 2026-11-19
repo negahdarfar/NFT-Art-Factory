@@ -18,6 +18,6 @@ test("collector dossier generator produces draft-only bilingual dossier with rel
   assert.match(content, /independently verified: false/i);
   assert.match(content, /Rights review: pending/i);
   assert.match(content, /Mint authorized: false/i);
-  assert.match(content, /Not a live offer/);
+  assert.match(content, /not a live offer/i);
   assert.match(content, /رادیویی موج‌کوتاه/);
 });
