@@ -1,0 +1,24 @@
+{
+  "ideas": [
+    {
+      "id": "sample-001",
+      "topic": "Surrealist works about memory and identity",
+      "audience": "Digital fine-art collectors",
+      "signals": {
+        "completedSales30d": 8,
+        "uniqueBuyers30d": 6,
+        "watchlistAdds30d": 42,
+        "communityGrowthPct30d": 12,
+        "commissionInquiries30d": 2,
+        "competingListings": 85
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://example.org/replace-with-a-real-public-source",
+          "observedAt": "2026-11-18T12:00:00Z",
+          "note": "Replace sample with a source supporting the entered observations."
+        }
+      ]
+    }
+  ]
+}
