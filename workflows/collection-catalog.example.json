@@ -30,8 +30,8 @@
           "id": "the-last-listener-001",
           "title": "The Last Listener",
           "draft_path": "drafts/the-last-listener.json",
-          "status": "generated_pending_owner_review",
-          "final_asset_path": null,
+          "status": "visual_selected_pending_asset_commit_and_rights_review",
+          "final_asset_path": "assets/the-last-listener.png",
           "rights_status": "pending",
           "owner_approval": false,
           "release_authorization": false
