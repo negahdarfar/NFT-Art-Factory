@@ -2,7 +2,7 @@
   "id": "the-witness-001",
   "title": "The Witness",
   "title_fa": "شاهد",
-  "status": "approved_for_listing_preparation",
+  "status": "approved_pending_binary_asset_commit",
   "rights_confirmed": true,
   "owner_approved": true,
   "image": {
@@ -10,7 +10,7 @@
     "original_upload": "1000218630.png",
     "dimensions": "1536x1536",
     "format": "PNG",
-    "note": "Original PNG received in chat; binary asset is not yet committed to the repository."
+    "note": "Original PNG attachment received and verified in this conversation; repository binary upload is the remaining blocker."
   },
   "description": "A surreal conceptual artwork depicting a monumental human eye inside an ornate golden frame, supported by human legs in an empty, desolate landscape beneath a muted sky.",
   "description_fa": "اثری مفهومی و سوررئال از چشمی بزرگ درون قابی طلایی و آراسته که بر دو پای انسانی در دشتی خالی و متروک ایستاده است.",
@@ -41,12 +41,23 @@
     "listing_url": null,
     "mint_status": "not_minted",
     "listing_status": "not_listed",
-    "publication_approval": "approved_for_listing_preparation_only",
-    "note": "Creator requested full registration and presentation. Minting and live marketplace listing still require wallet-connected owner transaction approval."
+    "publication_approval": "preparation_approved",
+    "note": "Creator requested full registration and presentation. Live minting and marketplace listing require wallet connection, owner signature and marketplace-specific finalization."
   },
   "rights_confirmation": {
     "confirmed_by_creator_in_chat": true,
     "confirmed_on": "2026-11-19",
     "scope": "Creator confirmed they created the artwork or hold permission to use and sell it as an NFT."
+  },
+  "presentation": {
+    "collection": "The Witness — Genesis Collection",
+    "edition": "Genesis #001",
+    "category": "Surrealist digital art",
+    "tagline": "A silent witness to an empty world.",
+    "tagline_fa": "شاهدی خاموش بر جهانی خالی.",
+    "sales_description": "A monumental eye inhabits an ornate golden frame, standing on human legs in a vast, barren landscape. The work explores observation, isolation, and the uneasy boundary between the human body and the image.",
+    "sales_description_fa": "چشمی عظیم در قاب طلایی آراسته، بر دو پای انسانی در دشتی بی‌انتها ایستاده است؛ اثری درباره نگاه، تنهایی و مرز ناآرام میان بدن انسان و تصویر.",
+    "edition_size": "1/1 proposed; not minted",
+    "sale_status": "preparation_only"
   }
 }
