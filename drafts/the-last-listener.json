@@ -1,5 +1,5 @@
 {
-  "status": "final_visual_candidate_selected_pending_asset_commit_and_rights_review",
+  "status": "creator_originality_attested_pending_terms_asset_commit_and_release_review",
   "name": "The Last Listener",
   "collection": "The Archive of Silence",
   "subtitle": "A signal of life in a world gone quiet",
@@ -53,7 +53,12 @@
     "model_or_tool": "OpenAI image generation",
     "generation_date": "2026-11-19",
     "selected_variant": "02",
-    "commercial_rights_review": "pending; verify applicable service terms and marketplace rules before listing"
+    "commercial_rights_review": "pending; verify applicable image-generation service terms, applicable law and marketplace rules before listing",
+    "creator_originality_attestation": {
+      "date": "2026-11-20",
+      "statement": "Creator states the design is entirely unique and original and contains no third-party artwork or design elements.",
+      "verification_status": "creator_attestation_only_not_independently_verified"
+    }
   },
   "sale_configuration": {
     "blockchain": null,
