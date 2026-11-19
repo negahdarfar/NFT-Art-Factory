@@ -39,6 +39,7 @@ jobs:
           node --check scripts/demand-research.mjs
           node --check scripts/growth-campaign.mjs
           node --check scripts/artwork-quality.mjs
+          node --check scripts/concept-studio.mjs
       - name: Run adapter and intake tests
         run: npm test
       - name: Generate launch readiness report (informational)
@@ -47,6 +48,8 @@ jobs:
         run: npm run quality:artwork
       - name: Generate growth campaign drafts
         run: npm run growth:campaign
+      - name: Generate curated concept briefs
+        run: npm run concept:studio
       - name: Build metadata
         run: npm run build
       - name: Generate creator gallery preview
