@@ -18,7 +18,8 @@
     "readiness": "node scripts/launch-readiness.mjs",
     "demand:research": "node scripts/demand-research.mjs",
     "growth:campaign": "node scripts/growth-campaign.mjs",
-    "quality:artwork": "node scripts/artwork-quality.mjs"
+    "quality:artwork": "node scripts/artwork-quality.mjs",
+    "concept:studio": "node scripts/concept-studio.mjs"
   },
   "engines": {
     "node": ">=22"
