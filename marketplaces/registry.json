@@ -8,33 +8,61 @@
       "id": "objkt",
       "name": "objkt",
       "adapter": "objkt",
-      "networks": ["tezos"],
-      "payoutAssets": ["XTZ", "oXTZ"],
-      "assetType": ["nft_art"],
+      "networks": [
+        "tezos"
+      ],
+      "payoutAssets": [
+        "XTZ",
+        "oXTZ"
+      ],
+      "assetType": [
+        "nft_art"
+      ],
       "priority": 1,
-      "status": "planned",
+      "status": "compliance_and_access_review",
       "requiresCompatibilityCheck": true,
-      "notes": "Art-focused; sale proceeds settle to creator wallet. Verify wallet/provider access and current fees before listing."
+      "notes": "Potential art-focused candidate only. Before selecting, verify current terms, sanctions/export restrictions, creator eligibility, wallet access, payout access and fees. Do not assume availability to creators in Iran."
     },
     {
       "id": "opensea",
       "name": "OpenSea",
       "adapter": "opensea",
-      "networks": ["ethereum", "base", "polygon", "other_supported_evm"],
-      "payoutAssets": ["listing_payment_asset"],
-      "assetType": ["nft_art", "collectibles"],
+      "networks": [
+        "ethereum",
+        "base",
+        "polygon",
+        "other_supported_evm"
+      ],
+      "payoutAssets": [
+        "listing_payment_asset"
+      ],
+      "assetType": [
+        "nft_art",
+        "collectibles"
+      ],
       "priority": 2,
-      "status": "planned",
+      "status": "blocked_pending_sanctions_eligibility_review",
       "requiresCompatibilityCheck": true,
-      "notes": "Use official API/SDK; commercial API use requires checking current terms and permissions. Never expose API keys in a browser."
+      "notes": "Do not use if creator is located in, ordinarily resident in, or otherwise covered by a jurisdiction/person restriction under current OpenSea terms. Do not bypass geographic, identity, or sanctions controls. Reassess only if creator is legally eligible."
     },
     {
       "id": "rarible",
       "name": "Rarible",
       "adapter": "rarible",
-      "networks": ["ethereum", "base", "polygon", "solana", "other_currently_supported"],
-      "payoutAssets": ["chain_native_or_supported_token"],
-      "assetType": ["nft_art", "collectibles"],
+      "networks": [
+        "ethereum",
+        "base",
+        "polygon",
+        "solana",
+        "other_currently_supported"
+      ],
+      "payoutAssets": [
+        "chain_native_or_supported_token"
+      ],
+      "assetType": [
+        "nft_art",
+        "collectibles"
+      ],
       "priority": 3,
       "status": "planned",
       "requiresCompatibilityCheck": true,
@@ -44,9 +72,19 @@
       "id": "zora",
       "name": "Zora",
       "adapter": "zora",
-      "networks": ["base", "solana", "other_currently_supported"],
-      "payoutAssets": ["onchain_creator_rewards"],
-      "assetType": ["creator_coins", "content_coins", "nft_related"],
+      "networks": [
+        "base",
+        "solana",
+        "other_currently_supported"
+      ],
+      "payoutAssets": [
+        "onchain_creator_rewards"
+      ],
+      "assetType": [
+        "creator_coins",
+        "content_coins",
+        "nft_related"
+      ],
       "priority": 4,
       "status": "separate_module",
       "requiresCompatibilityCheck": true,
@@ -56,9 +94,18 @@
       "id": "magiceden",
       "name": "Magic Eden",
       "adapter": "magiceden",
-      "networks": ["solana", "ethereum", "other_currently_supported"],
-      "payoutAssets": ["chain_native_or_supported_token"],
-      "assetType": ["nft_art", "collectibles"],
+      "networks": [
+        "solana",
+        "ethereum",
+        "other_currently_supported"
+      ],
+      "payoutAssets": [
+        "chain_native_or_supported_token"
+      ],
+      "assetType": [
+        "nft_art",
+        "collectibles"
+      ],
       "priority": 5,
       "status": "later",
       "requiresCompatibilityCheck": true,
