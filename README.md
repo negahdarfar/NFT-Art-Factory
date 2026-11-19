@@ -30,6 +30,11 @@ Run `npm run studio` to generate the local-first creator page at `dist/gallery/i
 - `npm run marketplace:pack` — prepare OpenSea/Rarible listing handoff files.
 - `npm run market:research` — calculate indicative price ranges from actual completed-sale comparables entered by the operator.
 - `npm run sales:report` — validate the sales ledger format and export gross/fees/net reports.
+- `npm run marketing:pack` — create SEO and social campaign drafts for artworks that passed rights and owner approval; it never publishes automatically.
+
+## Marketing automation
+
+The approval-gated marketing generator prepares SEO metadata and platform-specific campaign drafts only for artworks explicitly approved by the owner. It does not publish posts or send emails. See [marketing automation](docs/MARKETING_AUTOMATION.md).
 
 ## Market research and sales
 Copy `market-comps.example.json` to the private `market-comps.json`, replace the example with real completed sales and source URLs, then run `npm run market:research`. Copy `sales-ledger.example.json` to `sales-ledger.json`, enter actual settlement data, then run `npm run sales:report`. The tools do not scrape live marketplace data and never invent comps or sales. Hash-format validation is not independent on-chain verification. See [market research and sales ledger](docs/MARKET_RESEARCH_AND_SALES.md).
