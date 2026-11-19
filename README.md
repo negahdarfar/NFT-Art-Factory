@@ -90,3 +90,10 @@ Run `npm run quality:artwork` to validate image signatures/dimensions, reject mi
 ## Curated concept studio
 
 Run `npm run concept:studio` to prepare original art-direction briefs and generation prompts for a coherent surreal collection. The example series is a thematic companion to The Witness with distinct visual metaphors; it does not generate image files or claim market demand. See [the concept studio guide](docs/CONCEPT_STUDIO.md).
+
+
+## Global studio standards
+
+The studio's art direction, collection identity and curation rubric are defined in [the Art Direction Bible](docs/ART_DIRECTION_BIBLE.md). Every release must pass the [Global Release Standard](docs/GLOBAL_RELEASE_STANDARD.md), including asset integrity, provenance, rights, owner approval, market eligibility, cost review and action-specific authorization. The [Operating Scorecard](docs/OPERATING_SCORECARD.md) defines evidence-based weekly measurement without treating attention metrics as revenue.
+
+A starter collection catalog is available at [workflows/collection-catalog.example.json](workflows/collection-catalog.example.json). Copy it before making project-specific changes; keep private overrides and credentials out of Git.
