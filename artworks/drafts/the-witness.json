@@ -2,15 +2,15 @@
   "id": "the-witness-001",
   "title": "The Witness",
   "title_fa": "شاهد",
-  "status": "approved_pending_binary_asset_commit",
+  "status": "binary_asset_verified_in_repository",
   "rights_confirmed": true,
   "owner_approved": true,
   "image": {
-    "repository_path": "assets/artworks/the-witness-001.jpg",
+    "repository_path": "The-witness-001.jpg",
     "original_upload": "1000218630.png",
     "dimensions": "1536x1536",
     "format": "JPEG",
-    "note": "Original uploaded attachment verified as JPEG (1536x1536). The binary file itself is still awaiting repository upload.",
+    "note": "Original JPEG binary verified in repository root (2,153,115 bytes); metadata path aligned to exact committed path.",
     "mime_type": "image/jpeg"
   },
   "description": "A surreal conceptual artwork depicting a monumental human eye inside an ornate golden frame, supported by human legs in an empty, desolate landscape beneath a muted sky.",
