@@ -77,3 +77,8 @@ The long-term business objective, release phases, revenue channels, KPIs and saf
 ## Demand research
 
 Copy `demand-signals.example.json` to the private `demand-signals.json`, enter recent sourced observations, then run `npm run demand:research`. The report ranks themes using completed sales, unique buyers, watchlist additions, community growth, commission inquiries and competition. Scores are directional only; no live scraping, paid APIs, minting or publishing occurs. See [docs/DEMAND_RESEARCH_ENGINE.md](docs/DEMAND_RESEARCH_ENGINE.md).
+
+
+## Growth campaign engine
+
+Run `npm run growth:campaign` to create a bilingual launch-copy pack, 14-day campaign calendar and KPI tracker for artworks with explicit rights and owner approval. It is draft-only: no posts, DMs, minting, listings or payments are executed. See [the growth and launch playbook](docs/GROWTH_AND_LAUNCH_PLAYBOOK.md).
