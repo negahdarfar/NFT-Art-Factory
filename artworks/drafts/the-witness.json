@@ -6,11 +6,12 @@
   "rights_confirmed": true,
   "owner_approved": true,
   "image": {
-    "repository_path": "assets/artworks/the-witness-001.png",
+    "repository_path": "assets/artworks/the-witness-001.jpg",
     "original_upload": "1000218630.png",
     "dimensions": "1536x1536",
-    "format": "PNG",
-    "note": "Original PNG attachment received and verified in this conversation; repository binary upload is the remaining blocker."
+    "format": "JPEG",
+    "note": "Original uploaded attachment verified as JPEG (1536x1536). The binary file itself is still awaiting repository upload.",
+    "mime_type": "image/jpeg"
   },
   "description": "A surreal conceptual artwork depicting a monumental human eye inside an ornate golden frame, supported by human legs in an empty, desolate landscape beneath a muted sky.",
   "description_fa": "اثری مفهومی و سوررئال از چشمی بزرگ درون قابی طلایی و آراسته که بر دو پای انسانی در دشتی خالی و متروک ایستاده است.",
@@ -42,7 +43,7 @@
     "mint_status": "not_minted",
     "listing_status": "not_listed",
     "publication_approval": "preparation_approved",
-    "note": "Creator requested full registration and presentation. Live minting and marketplace listing require wallet connection, owner signature and marketplace-specific finalization."
+    "note": "Preparation is approved. Minting and listing remain pending creator wallet connection, creator signature, and marketplace finalization."
   },
   "rights_confirmation": {
     "confirmed_by_creator_in_chat": true,
