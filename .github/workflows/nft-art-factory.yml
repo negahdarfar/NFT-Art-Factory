@@ -31,6 +31,7 @@ jobs:
           node --check scripts/creator-studio.mjs
           node --check worker/index.mjs
           node --check scripts/marketplace-pack.mjs
+          node --check scripts/objkt-pack.mjs
           node --check scripts/market-research.mjs
           node --check scripts/sales-ledger.mjs
           node --check scripts/marketing-pack.mjs
@@ -44,6 +45,8 @@ jobs:
         run: npm run studio
       - name: Generate marketplace listing drafts
         run: npm run marketplace:pack
+      - name: Generate objkt Tezos listing draft
+        run: npm run objkt:pack
       - name: Generate approval-gated marketing drafts
         run: npm run marketing:pack
       - name: Upload generated metadata artifact
