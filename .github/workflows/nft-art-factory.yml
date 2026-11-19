@@ -25,7 +25,7 @@ jobs:
       - name: Create a tiny test artwork
         run: |
           mkdir -p assets
-          printf 'placeholder-artwork-for-ci' > assets/artwork-001.png
+          printf '%s' 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/pWQAAAAASUVORK5CYII=' | base64 -d > assets/artwork-001.png
       - name: Check JavaScript syntax
         run: |
           node --check scripts/creator-studio.mjs
@@ -38,10 +38,15 @@ jobs:
           node --check scripts/launch-readiness.mjs
           node --check scripts/demand-research.mjs
           node --check scripts/growth-campaign.mjs
+          node --check scripts/artwork-quality.mjs
       - name: Run adapter and intake tests
         run: npm test
       - name: Generate launch readiness report (informational)
         run: npm run readiness
+      - name: Audit artwork integrity and provenance
+        run: npm run quality:artwork
+      - name: Generate growth campaign drafts
+        run: npm run growth:campaign
       - name: Build metadata
         run: npm run build
       - name: Generate creator gallery preview
