@@ -20,7 +20,8 @@
     "growth:campaign": "node scripts/growth-campaign.mjs",
     "quality:artwork": "node scripts/artwork-quality.mjs",
     "concept:studio": "node scripts/concept-studio.mjs",
-    "studio:status": "node scripts/studio-dashboard.mjs"
+    "studio:status": "node scripts/studio-dashboard.mjs",
+    "collector:dossier": "node scripts/collector-dossier.mjs"
   },
   "engines": {
     "node": ">=22"
