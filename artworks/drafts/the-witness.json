@@ -3,7 +3,7 @@
   "title": "The Witness",
   "title_fa": "شاهد",
   "status": "draft_pending_asset_upload",
-  "rights_confirmed": false,
+  "rights_confirmed": true,
   "owner_approved": false,
   "image": {
     "repository_path": "assets/artworks/the-witness-001.jpg",
@@ -40,6 +40,12 @@
     "marketplace": null,
     "listing_url": null,
     "mint_status": "not_minted",
-    "listing_status": "not_listed"
+    "listing_status": "not_listed",
+    "publication_approval": "not_granted"
+  },
+  "rights_confirmation": {
+    "confirmed_by_creator_in_chat": true,
+    "confirmed_on": "2026-11-19",
+    "scope": "Creator confirmed they created the artwork or hold permission to use and sell it as an NFT."
   }
 }
