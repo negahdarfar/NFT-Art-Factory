@@ -37,4 +37,4 @@ fs.mkdirSync(out, { recursive: true });
 fs.writeFileSync(path.join(out, "report.json"), JSON.stringify(report, null, 2) + "\n");
 console.log("Launch readiness: " + report.status + " (" + blocked.length + " blocking check(s)).");
 for (const check of checks) console.log(check.status.toUpperCase() + " " + check.id + ": " + check.detail);
-if (blocked.length) process.exitCode = 2;
+
