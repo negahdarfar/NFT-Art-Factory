@@ -36,6 +36,7 @@ jobs:
           node --check scripts/sales-ledger.mjs
           node --check scripts/marketing-pack.mjs
           node --check scripts/launch-readiness.mjs
+          node --check scripts/demand-research.mjs
       - name: Run adapter and intake tests
         run: npm test
       - name: Generate launch readiness report (informational)
