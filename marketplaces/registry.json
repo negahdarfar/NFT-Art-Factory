@@ -19,9 +19,9 @@
         "nft_art"
       ],
       "priority": 1,
-      "status": "compliance_and_access_review",
+      "status": "first_candidate_wallet_and_payout_check_required",
       "requiresCompatibilityCheck": true,
-      "notes": "Potential art-focused candidate only. Before selecting, verify current terms, sanctions/export restrictions, creator eligibility, wallet access, payout access and fees. Do not assume availability to creators in Iran."
+      "notes": "objkt FAQ states it imposes no geographic restrictions on minting/listing/selling; however applicable laws still apply and external wallet providers, payment services and exchanges have their own country availability. Verify the creator's wallet and lawful payout route before minting."
     },
     {
       "id": "opensea",
