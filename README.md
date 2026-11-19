@@ -102,3 +102,8 @@ A starter collection catalog is available at [workflows/collection-catalog.examp
 ## Studio operations dashboard
 
 Run `npm run studio:status` to generate a local read-only operations dashboard and JSON report at `dist/studio-dashboard/`. It tracks artwork assets, rights evidence, owner approval and action-specific release gates without minting, listing or publishing. See [the dashboard guide](docs/STUDIO_DASHBOARD.md).
+
+
+## Collector dossier drafts
+
+Run `npm run collector:dossier` to generate bilingual, provenance-aware collector dossier drafts in `dist/collector-dossiers/`. The output reflects pending rights and release gates and is not automatically published. See [collector dossier generator](docs/COLLECTOR_DOSSIER_GENERATOR.md).
