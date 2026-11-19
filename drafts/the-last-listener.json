@@ -1,11 +1,11 @@
 {
-  "status": "draft_pending_owner_review",
+  "status": "final_visual_candidate_selected_pending_asset_commit_and_rights_review",
   "name": "The Last Listener",
   "collection": "The Archive of Silence",
   "subtitle": "A signal of life in a world gone quiet",
   "description": "Half-buried in a vast, dark salt plain, an old shortwave radio still holds a faint amber glow. From the center of its weathered speaker grille, a small green shoot rises into the last light of day. The work sets the fragile persistence of life against the silence of abandonment: even when no voice answers, something may still begin again.",
   "image": "assets/the-last-listener.png",
-  "image_asset_status": "generated_in_chat_not_yet_added_to_repository",
+  "image_asset_status": "generated_in_chat_local_file_verified_not_yet_added_to_repository",
   "image_candidates": [
     {
       "variant": "01",
@@ -67,7 +67,7 @@
   "approval": {
     "rights_confirmed": false,
     "owner_approved": false,
-    "final_image_selected": false,
+    "final_image_selected": true,
     "minting_authorized": false,
     "public_listing_authorized": false
   },
@@ -79,11 +79,12 @@
       "Preferred variant has square 1:1 composition"
     ],
     "issues_to_review": [
-      "Check fine details and generated dial markings at full resolution",
-      "Confirm image rights and applicable commercial terms",
-      "Owner must approve exact final variant",
-      "The generated image is not yet stored in the GitHub repository"
+      "The selected PNG master exists in the current working environment at 1254x1254, but is not yet committed to the GitHub repository",
+      "Verify the final image file checksum after repository upload",
+      "Confirm the rights basis and applicable commercial-use terms",
+      "Owner approval of the rights basis and release details remains pending"
     ],
-    "score": "not numerically scored; requires human art direction review"
+    "score": "not numerically scored; requires human art direction review",
+    "final_selection_note": "Creator selected candidate variant 02 on 2026-11-19. This records visual selection only; it does not constitute rights confirmation, general owner release approval, minting authorization or public listing authorization."
   }
 }
