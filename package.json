@@ -13,7 +13,8 @@
     "marketplace:pack": "node scripts/marketplace-pack.mjs",
     "market:research": "node scripts/market-research.mjs",
     "sales:report": "node scripts/sales-ledger.mjs",
-    "marketing:pack": "node scripts/marketing-pack.mjs"
+    "marketing:pack": "node scripts/marketing-pack.mjs",
+    "objkt:pack": "node scripts/objkt-pack.mjs"
   },
   "engines": {
     "node": ">=22"
