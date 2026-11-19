@@ -1,0 +1,65 @@
+{
+  "collection_title": "The Archive of Silence",
+  "collection_thesis": "A surreal, human-centered series about the traces people leave behind when their voices, places and routines disappear.",
+  "relationship_to_genesis": "A thematic companion to The Witness, not a visual sequel. Keep the sense of mystery and symbolic storytelling while avoiding reuse of its eye, ornate frame or empty-landscape composition.",
+  "creative_guardrails": [
+    "Create original compositions; do not imitate a living artist or reproduce a known artwork.",
+    "Do not use copyrighted characters, brand marks, celebrity likenesses or recognizable franchise designs.",
+    "Avoid generic AI gloss, random decorative clutter, fake signatures, watermarks and embedded text.",
+    "Each artwork must have one memorable visual metaphor and a clear focal point.",
+    "Do not claim that a concept is trending or commercially validated without sourced demand evidence."
+  ],
+  "concepts": [
+    {
+      "id": "last-listener",
+      "working_title": "The Last Listener",
+      "core_question": "What remains when a place has nobody left to speak?",
+      "emotional_tension": "Abandonment versus the stubborn possibility of connection.",
+      "visual_metaphor": "An antique shortwave radio half-buried in a black salt plain, with a single delicate green shoot emerging from its speaker grille.",
+      "composition": "Low, cinematic three-quarter view; radio occupies the lower-right third; vast negative space and a thin horizon; one tiny distant light.",
+      "material_language": "Weathered bakelite, salt crystals, oxidized metal, fragile living leaf.",
+      "palette": [
+        "charcoal",
+        "bone white",
+        "oxidized copper",
+        "one restrained living green"
+      ],
+      "narrative": "The machine no longer receives a human voice, yet something living answers from inside it.",
+      "distinctiveness_rule": "Do not include eyes, ornate gold frames or human legs; the radio and the emerging shoot must carry the entire metaphor."
+    },
+    {
+      "id": "unsent-atlas",
+      "working_title": "The Unsent Atlas",
+      "core_question": "Can a map remember a destination that was never reached?",
+      "emotional_tension": "Hope versus the grief of an unfinished journey.",
+      "visual_metaphor": "A monumental folded paper atlas floating just above a dark, perfectly still sea; its contour lines slowly transform into constellations.",
+      "composition": "Top-down perspective with a strong diagonal fold; the atlas is centered but surrounded by deep water; delicate stars appear only along the map lines.",
+      "material_language": "Handmade archival paper, graphite contours, translucent water, pinprick starlight.",
+      "palette": [
+        "midnight blue",
+        "warm parchment",
+        "graphite",
+        "muted silver"
+      ],
+      "narrative": "A journey that never happened leaves behind a geography of its own.",
+      "distinctiveness_rule": "No radio, no plant, no eye imagery; the paper fold and transforming map lines are the signature."
+    },
+    {
+      "id": "borrowed-shadow",
+      "working_title": "A Borrowed Shadow",
+      "core_question": "If a person disappears, can their shadow remain as a witness?",
+      "emotional_tension": "Presence versus absence; identity versus memory.",
+      "visual_metaphor": "An empty, ordinary wooden chair in a sunless room; its shadow stands upright behind it in the shape of a person, without depicting a body.",
+      "composition": "Centered frontal view with architectural symmetry; chair small in frame; the upright shadow is the dominant shape; a narrow shaft of pale light reveals dust.",
+      "material_language": "Worn wood, plaster, dust, soft volumetric light and deep matte shadow.",
+      "palette": [
+        "smoke grey",
+        "aged walnut",
+        "chalk",
+        "faint amber"
+      ],
+      "narrative": "The room has forgotten its occupant, but the shadow has not.",
+      "distinctiveness_rule": "No literal human figure, no portrait, no eye or frame; the empty chair and impossible shadow must remain visually legible."
+    }
+  ]
+}
