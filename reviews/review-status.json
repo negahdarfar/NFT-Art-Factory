@@ -6,9 +6,10 @@
     "notes": "Creator confirmed rights and explicitly requested the artwork be fully registered and presented. Approval covers preparation and promotional drafts; minting, wallet signatures, and live marketplace listing still require the creator's explicit transaction approval."
   },
   "The Last Listener": {
-    "status": "visual_selected_pending_rights_and_release_review",
+    "status": "creator_originality_attested_pending_terms_and_release_review",
     "rights_confirmed": false,
     "owner_approved": false,
-    "notes": "Creator explicitly selected candidate variant 02 (1254x1254) on 2026-11-19 as the final visual direction. This is visual selection only. The binary master has not yet been committed to the repository; rights basis, commercial-use review and release approval remain pending. No minting, listing, public upload or public promotion is authorized."
+    "creator_originality_attestation": "On 2026-11-20, the creator stated that the design is entirely unique and original, with no third-party artwork or design elements used.",
+    "notes": "Creator selected candidate variant 02 and attested that the design is entirely original and does not use third-party artwork/design elements. This is a creator statement, not independent legal verification. Review applicable image-generation service terms, copyright and commercial-use rules, and marketplace requirements. The binary master is not yet committed. No minting, listing, public upload or public promotion is authorized."
   }
 }
