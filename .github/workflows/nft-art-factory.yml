@@ -33,6 +33,7 @@ jobs:
           node --check scripts/marketplace-pack.mjs
           node --check scripts/market-research.mjs
           node --check scripts/sales-ledger.mjs
+          node --check scripts/marketing-pack.mjs
       - name: Run adapter and intake tests
         run: npm test
       - name: Build metadata
@@ -43,6 +44,8 @@ jobs:
         run: npm run studio
       - name: Generate marketplace listing drafts
         run: npm run marketplace:pack
+      - name: Generate approval-gated marketing drafts
+        run: npm run marketing:pack
       - name: Upload generated metadata artifact
         uses: actions/upload-artifact@v4
         with:
