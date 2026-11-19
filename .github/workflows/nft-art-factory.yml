@@ -35,9 +35,10 @@ jobs:
           node --check scripts/market-research.mjs
           node --check scripts/sales-ledger.mjs
           node --check scripts/marketing-pack.mjs
+          node --check scripts/launch-readiness.mjs
       - name: Run adapter and intake tests
         run: npm test
-      - name: Build metadata
+      - name: Generate launch readiness report (informational)\n        run: npm run readiness\n      - name: Build metadata
         run: npm run build
       - name: Generate creator gallery preview
         run: npm run gallery
