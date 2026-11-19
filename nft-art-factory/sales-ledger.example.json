@@ -1,0 +1,16 @@
+{
+  "sales": [
+    {
+      "marketplace": "OpenSea",
+      "chain": "ethereum",
+      "tokenId": "1",
+      "salePrice": 0.08,
+      "currency": "ETH",
+      "fees": 0.004,
+      "saleDate": "2026-10-01T12:00:00Z",
+      "transactionHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "transactionUrl": "https://etherscan.io/tx/replace-with-real-transaction",
+      "payoutAddress": "0x0000000000000000000000000000000000000000"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "platforms": ["opensea", "rarible"],
+  "chain": "ethereum",
+  "currency": "ETH",
+  "price": null
+}

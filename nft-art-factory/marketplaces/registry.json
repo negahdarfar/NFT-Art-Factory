@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "settlementPreference": "creator_non_custodial_wallet",
+  "requireCreatorSignature": true,
+  "neverStorePrivateKeys": true,
+  "marketplaces": [
+    {
+      "id": "objkt",
+      "name": "objkt",
+      "adapter": "objkt",
+      "networks": ["tezos"],
+      "payoutAssets": ["XTZ", "oXTZ"],
+      "assetType": ["nft_art"],
+      "priority": 1,
+      "status": "planned",
+      "requiresCompatibilityCheck": true,
+      "notes": "Art-focused; sale proceeds settle to creator wallet. Verify wallet/provider access and current fees before listing."
+    },
+    {
+      "id": "opensea",
+      "name": "OpenSea",
+      "adapter": "opensea",
+      "networks": ["ethereum", "base", "polygon", "other_supported_evm"],
+      "payoutAssets": ["listing_payment_asset"],
+      "assetType": ["nft_art", "collectibles"],
+      "priority": 2,
+      "status": "planned",
+      "requiresCompatibilityCheck": true,
+      "notes": "Use official API/SDK; commercial API use requires checking current terms and permissions. Never expose API keys in a browser."
+    },
+    {
+      "id": "rarible",
+      "name": "Rarible",
+      "adapter": "rarible",
+      "networks": ["ethereum", "base", "polygon", "solana", "other_currently_supported"],
+      "payoutAssets": ["chain_native_or_supported_token"],
+      "assetType": ["nft_art", "collectibles"],
+      "priority": 3,
+      "status": "planned",
+      "requiresCompatibilityCheck": true,
+      "notes": "Non-custodial wallet flow; verify current chain support, fees, and legal availability."
+    },
+    {
+      "id": "zora",
+      "name": "Zora",
+      "adapter": "zora",
+      "networks": ["base", "solana", "other_currently_supported"],
+      "payoutAssets": ["onchain_creator_rewards"],
+      "assetType": ["creator_coins", "content_coins", "nft_related"],
+      "priority": 4,
+      "status": "separate_module",
+      "requiresCompatibilityCheck": true,
+      "notes": "Creator-coin and content-coin rewards are not equivalent to a conventional fixed-price NFT listing."
+    },
+    {
+      "id": "magiceden",
+      "name": "Magic Eden",
+      "adapter": "magiceden",
+      "networks": ["solana", "ethereum", "other_currently_supported"],
+      "payoutAssets": ["chain_native_or_supported_token"],
+      "assetType": ["nft_art", "collectibles"],
+      "priority": 5,
+      "status": "later",
+      "requiresCompatibilityCheck": true,
+      "notes": "Add after reviewing current APIs, chain support, contract compatibility, and creator eligibility."
+    }
+  ]
+}
