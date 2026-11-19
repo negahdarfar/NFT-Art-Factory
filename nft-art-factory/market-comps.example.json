@@ -1,0 +1,16 @@
+{
+  "currency": "ETH",
+  "chain": "ethereum",
+  "records": [
+    {
+      "itemName": "Artwork 001",
+      "saleType": "completed",
+      "price": 0.08,
+      "currency": "ETH",
+      "chain": "ethereum",
+      "saleDate": "2026-10-01T12:00:00Z",
+      "marketplace": "Example marketplace",
+      "sourceUrl": "https://example.com/replace-with-real-sale"
+    }
+  ]
+}
