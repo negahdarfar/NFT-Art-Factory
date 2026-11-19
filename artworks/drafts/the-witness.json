@@ -2,9 +2,9 @@
   "id": "the-witness-001",
   "title": "The Witness",
   "title_fa": "شاهد",
-  "status": "draft_pending_asset_upload",
+  "status": "approved_for_listing_preparation",
   "rights_confirmed": true,
-  "owner_approved": false,
+  "owner_approved": true,
   "image": {
     "repository_path": "assets/artworks/the-witness-001.png",
     "original_upload": "1000218630.png",
@@ -41,7 +41,8 @@
     "listing_url": null,
     "mint_status": "not_minted",
     "listing_status": "not_listed",
-    "publication_approval": "not_granted"
+    "publication_approval": "approved_for_listing_preparation_only",
+    "note": "Creator requested full registration and presentation. Minting and live marketplace listing still require wallet-connected owner transaction approval."
   },
   "rights_confirmation": {
     "confirmed_by_creator_in_chat": true,
