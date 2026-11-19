@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "catalog_name": "NFT Art Factory Collection Catalog",
+  "policy": {
+    "default_status": "concept",
+    "require_unique_ids": true,
+    "require_provenance": true,
+    "require_human_curation": true,
+    "require_owner_approval": true,
+    "public_release_requires_action_specific_authorization": true,
+    "auto_mint": false,
+    "auto_list": false,
+    "auto_publish": false,
+    "budget_usd": 0
+  },
+  "collections": [
+    {
+      "id": "archive-of-silence",
+      "name": "The Archive of Silence",
+      "thesis": "What remains meaningful after the world becomes quiet?",
+      "visual_language": [
+        "cinematic surrealism",
+        "restrained palette",
+        "single dominant symbolic object",
+        "tactile weathered materials",
+        "intentional negative space"
+      ],
+      "works": [
+        {
+          "id": "the-last-listener-001",
+          "title": "The Last Listener",
+          "draft_path": "drafts/the-last-listener.json",
+          "status": "generated_pending_owner_review",
+          "final_asset_path": null,
+          "rights_status": "pending",
+          "owner_approval": false,
+          "release_authorization": false
+        }
+      ]
+    }
+  ]
+}
