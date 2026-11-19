@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "program": "90_day_nft_growth_experiment",
+  "budget": {
+    "monthly_usd": 0,
+    "paid_ads_allowed": false,
+    "paid_api_allowed": false,
+    "spend_requires_separate_owner_approval": true
+  },
+  "business_model": {
+    "type": "hybrid",
+    "offers": [
+      "curated_premium_original_art",
+      "limited_edition_collections",
+      "custom_commissions",
+      "commercial_licensing"
+    ],
+    "no_investment_or_return_promises": true
+  },
+  "automation": {
+    "market_research": "automated_draft",
+    "concept_generation": "automated_draft",
+    "artwork_generation": "automated_draft",
+    "quality_and_similarity_screening": "automated_assist_human_review_required",
+    "metadata_and_seo": "automated_draft",
+    "marketing": "draft_only_until_owner_approval",
+    "minting": "owner_signature_required",
+    "listing_and_pricing": "owner_approval_and_signature_required",
+    "wallet_transfers": "owner_signature_required",
+    "sales_reconciliation": "automated_assist_chain_verification_required"
+  },
+  "revenue_target": {
+    "currency": "USD",
+    "amount": 1000000,
+    "window_days": 90,
+    "classification": "aspirational_not_forecast_or_guarantee",
+    "primary_kpi": "verified_net_wallet_receipts",
+    "also_track": ["gross_sales", "marketplace_fees", "network_fees", "refunds", "taxes"]
+  },
+  "release_policy": {
+    "start_with_signature_collection": true,
+    "no_bulk_low_quality_minting": true,
+    "no_wash_trading_or_fake_engagement": true,
+    "rights_review_required": true,
+    "human_approval_required": true
+  }
+}
