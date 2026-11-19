@@ -65,6 +65,6 @@ A safe, draft-only objkt metadata and release checklist generator is available w
 The bilingual presentation, promotional drafts, SEO copy and release checklist for **The Witness — Genesis #001** are in [marketing/THE_WITNESS_LAUNCH_PACK.md](marketing/THE_WITNESS_LAUNCH_PACK.md). This is preparation only; no mint, live listing or public post has been made.
 
 
-## Business roadmap
+## 90-day zero-budget hybrid execution\n\nThe approved operating profile, free-first stack, owner-signature boundaries, release gates and weekly scorecard are in [docs/ZERO_BUDGET_HYBRID_EXECUTION.md](docs/ZERO_BUDGET_HYBRID_EXECUTION.md). Run `npm run readiness` for a local configuration readiness report; it does not mint, list, publish, or sign.\n\n## Business roadmap
 
 The long-term business objective, release phases, revenue channels, KPIs and safety controls are tracked in [docs/BUSINESS_ROADMAP.md](docs/BUSINESS_ROADMAP.md). The USD 1,000,000 target is aspirational, not a sales or income guarantee.
