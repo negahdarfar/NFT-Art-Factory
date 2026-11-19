@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "records_are_evidence_not_legal_opinions": true,
+    "creator_attestation_does_not_equal_legal_clearance": true,
+    "release_requires_separate_owner_authorization": true
+  },
+  "works": [
+    {
+      "work_id": "the-last-listener-001",
+      "title": "The Last Listener",
+      "collection_id": "archive-of-silence",
+      "creation": {
+        "method": "AI-assisted image generation",
+        "tool": "ChatGPT image generation",
+        "created_at": null,
+        "prompt_archive_path": null,
+        "generation_reference": null
+      },
+      "creator_attestation": {
+        "status": "attested",
+        "statement": "The creator states that the design is entirely original and unique and that no third-party artwork or design elements were used.",
+        "attested_at": "2026-11-20",
+        "independently_verified": false
+      },
+      "asset": {
+        "path": "assets/the-last-listener.png",
+        "status": "generated_locally_not_committed",
+        "sha256": null,
+        "mime_type": "image/png",
+        "width": 1254,
+        "height": 1254
+      },
+      "rights_review": {
+        "status": "pending",
+        "service_terms_reviewed": false,
+        "commercial_use_reviewed": false,
+        "third_party_materials_reviewed": false,
+        "review_notes": "Creator originality attestation is recorded separately. Review applicable image-generation terms, jurisdiction-specific rights and marketplace requirements before release."
+      },
+      "release": {
+        "owner_approved": false,
+        "mint_authorized": false,
+        "listing_authorized": false,
+        "public_promotion_authorized": false
+      },
+      "history": [
+        {
+          "date": "2026-11-19",
+          "event": "visual_candidate_selected",
+          "details": "Creator selected candidate variant 02 as the final visual direction."
+        },
+        {
+          "date": "2026-11-20",
+          "event": "creator_originality_attestation_recorded",
+          "details": "Creator stated that the design is entirely unique and does not use third-party artwork or design elements."
+        }
+      ]
+    }
+  ]
+}
