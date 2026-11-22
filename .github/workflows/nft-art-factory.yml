@@ -1,0 +1,53 @@
+name: NFT Art Factory validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/nft-art-factory
+    paths:
+      - "nft-art-factory/**"
+      - ".github/workflows/nft-art-factory.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nft-art-factory
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare example collection for CI
+        run: cp collection.example.json collection.json
+      - name: Create a tiny test artwork
+        run: |
+          mkdir -p assets
+          printf 'placeholder-artwork-for-ci' > assets/artwork-001.png
+      - name: Check JavaScript syntax
+        run: |
+          node --check scripts/creator-studio.mjs
+          node --check worker/index.mjs
+          node --check scripts/marketplace-pack.mjs
+          node --check scripts/market-research.mjs
+          node --check scripts/sales-ledger.mjs
+      - name: Run adapter and intake tests
+        run: npm test
+      - name: Build metadata
+        run: npm run build
+      - name: Generate creator gallery preview
+        run: npm run gallery
+      - name: Generate interactive creator studio
+        run: npm run studio
+      - name: Generate marketplace listing drafts
+        run: npm run marketplace:pack
+      - name: Upload generated metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nft-metadata-preview
+          path: dist/

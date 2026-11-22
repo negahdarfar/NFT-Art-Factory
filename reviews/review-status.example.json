@@ -1,0 +1,8 @@
+{
+  "Artwork 001": {
+    "status": "pending_review",
+    "rights_confirmed": false,
+    "owner_approved": false,
+    "notes": "Review authorship, image quality, metadata and intended marketplace before publication."
+  }
+}
