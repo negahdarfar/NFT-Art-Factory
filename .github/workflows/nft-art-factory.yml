@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - feature/nft-art-factory
+      - main
     paths:
-      - "nft-art-factory/**"
+      - "**"
       - ".github/workflows/nft-art-factory.yml"
 
 permissions:
@@ -15,9 +15,6 @@ permissions:
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: nft-art-factory
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
