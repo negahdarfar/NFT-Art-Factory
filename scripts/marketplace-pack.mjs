@@ -39,6 +39,15 @@ const supported = {
     market: "https://rarible.com/",
     walletSignatureRequired: true,
     apiKeyRequired: true
+  },
+  objkt: {
+    name: "objkt",
+    networkModel: "Tezos mainnet; FA2 token contract and TZIP-16/TZIP-21 metadata.",
+    flow: "Create or select a collection on objkt, upload the artwork and TZIP-21 metadata, mint through the connected Tezos wallet, then create a listing on objkt. Every on-chain action requires the owner's review and wallet signature.",
+    api: "https://data.objkt.com/docs/",
+    market: "https://objkt.com/",
+    walletSignatureRequired: true,
+    apiKeyRequired: false
   }
 };
 
@@ -56,6 +65,23 @@ const drafts = collection.items.map((item, index) => {
   const title = String(item.name || "").trim();
   const description = String(item.description || "").trim();
   if (!title || !description || !item.image) fail("Each item needs name, description and image.");
+  const tezosAttributes = (Array.isArray(item.attributes) ? item.attributes : []).map(attribute => ({
+    name: String(attribute.name || attribute.trait_type || "Attribute"),
+    value: String(attribute.value ?? "")
+  }));
+  const mimeType = /\\.svg$/i.test(item.image) ? "image/svg+xml"
+    : /\\.jpe?g$/i.test(item.image) ? "image/jpeg"
+      : /\\.webp$/i.test(item.image) ? "image/webp" : "image/png";
+  const objktMetadataDraft = {
+    name: title,
+    description,
+    artifactUri: "ipfs://REPLACE_WITH_PINATA_IMAGE_CID",
+    displayUri: "ipfs://REPLACE_WITH_PINATA_IMAGE_CID",
+    thumbnailUri: "ipfs://REPLACE_WITH_PINATA_IMAGE_CID",
+    creators: ["REPLACE_WITH_YOUR_PUBLIC_TEZOS_WALLET_ADDRESS"],
+    attributes: tezosAttributes,
+    formats: [{ uri: "ipfs://REPLACE_WITH_PINATA_IMAGE_CID", mimeType }]
+  };
   return {
     localId: index + 1,
     slug: slug(title),
@@ -65,6 +91,15 @@ const drafts = collection.items.map((item, index) => {
     externalUrl: collection.external_url || "",
     attributes: Array.isArray(item.attributes) ? item.attributes : [],
     tags: cleanTags(item),
+    ...(selected.includes("objkt") ? {
+      objkt: {
+        network: "tezos",
+        tokenStandard: "FA2",
+        metadataStandard: ["TZIP-16", "TZIP-21"],
+        metadata: objktMetadataDraft,
+        readiness: "draft_requires_public_image_cid_and_verified_creator_wallet_address"
+      }
+    } : {}),
     listing: {
       status: "draft_not_listed",
       suggestedPrice: config.price ?? null,
@@ -101,6 +136,25 @@ const csv = [
   ...drafts.map(x => [x.localId,x.title,x.description,x.imageFile,x.tags.join("|"),x.listing.suggestedPrice ?? "",x.listing.currency,x.listing.chain,x.listing.status])
 ].map(row => row.map(v => '"' + String(v).replaceAll('"','""') + '"').join(",")).join("\n") + "\n";
 fs.writeFileSync(path.join(outDir, "listing-drafts.csv"), csv);
+if (selected.includes("objkt")) {
+  fs.writeFileSync(path.join(outDir, "objkt-token-metadata-drafts.json"), JSON.stringify({
+    standard: "TZIP-21",
+    network: "tezos",
+    publicationMode: "draft_only",
+    items: drafts.map(item => ({
+      localId: item.localId,
+      title: item.title,
+      metadata: item.objkt.metadata,
+      readiness: item.objkt.readiness
+    })),
+    warnings: [
+      "Replace every IPFS placeholder with the final public Pinata image URI.",
+      "Replace the creator placeholder with the owner's verified public Tezos address.",
+      "Validate the final token metadata with objkt's official metadata validator.",
+      "This file does not deploy an FA2 contract, mint a token, or create a listing."
+    ]
+  }, null, 2) + "\\n");
+}
 fs.writeFileSync(path.join(outDir, "marketplace-checklist.md"), `# Marketplace publication checklist
 
 For each item, complete these checks separately on each marketplace:
