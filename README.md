@@ -34,6 +34,12 @@ Run `npm run studio` to generate the local-first creator page at `dist/gallery/i
 ## Market research and sales
 Copy `market-comps.example.json` to the private `market-comps.json`, replace the example with real completed sales and source URLs, then run `npm run market:research`. Copy `sales-ledger.example.json` to `sales-ledger.json`, enter actual settlement data, then run `npm run sales:report`. The tools do not scrape live marketplace data and never invent comps or sales. Hash-format validation is not independent on-chain verification. See [market research and sales ledger](docs/MARKET_RESEARCH_AND_SALES.md).
 
+## Tezos / objkt preparation
+
+The marketplace packer supports `objkt` as a **draft-only** target. Add `"objkt"` to the `platforms` array in the private `marketplaces.json` configuration, then run `npm run marketplace:pack`. It creates `dist/marketplace-drafts/objkt-token-metadata-drafts.json` using the Tezos FA2 and TZIP-21 preparation fields. The image CID and creator wallet address are explicit placeholders and must be replaced only with the final public IPFS URI and the owner's verified public Tezos address. Validate the final token metadata with the official [objkt metadata validator](https://objkt-com.github.io/metadata-validator/).
+
+This is not a mint or listing integration: collection deployment, minting, and sale listing remain in objkt's UI and require the owner's wallet review and signature. See [Tezos / objkt handoff](docs/OBJKT_TEZOS_HANDOFF.md).
+
 ## Marketplace listing preparation
 Run `npm run marketplace:pack` to prepare OpenSea and Rarible listing drafts, a CSV review sheet and a publication checklist. This does not list or mint assets; wallet approval and signatures remain under the owner's control. See [marketplace listing preparation](docs/MARKETPLACE_LISTING_PREP.md).
 
