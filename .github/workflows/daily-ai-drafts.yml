@@ -50,7 +50,7 @@ jobs:
         if: always() && steps.config.outputs.enabled == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: nex orium-ai-drafts-${{ github.run_number }}
+          name: nexorium-ai-drafts-${{ github.run_number }}
           path: |
             assets/ai-generated/
             reviews/ai-generation-queue.json
