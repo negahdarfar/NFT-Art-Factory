@@ -17,7 +17,7 @@ Run `npm run studio` to generate the local-first creator page at `dist/gallery/i
 2. Describe items in `collection.json`.
 3. Validate and build ERC-721-compatible metadata with `npm run build`.
 4. Review creator rights, commercial-use permissions, marketplace eligibility, fees and royalties.
-5. Upload approved artwork and metadata to IPFS using the Pinata adapter.
+5. Upload approved artwork and its finalized token metadata to public IPFS using the Pinata adapter; the resulting image and metadata CIDs are recorded separately.
 6. Use marketplace integrations only where official APIs support the selected network and account. Wallet signing and irreversible actions require explicit owner approval.
 
 ## Commands
