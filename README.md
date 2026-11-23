@@ -7,6 +7,10 @@ A draft-first creator workflow for original artwork and AI-generated artwork.
 - **AI-created work:** generate drafts through the Cloudflare Workers AI adapter.
 - Both paths enter human review before any public upload, mint, or marketplace listing.
 
+## NEXORIUM scheduled AI drafts
+
+The `.github/workflows/daily-ai-drafts.yml` workflow supports a daily scheduled run and manual dispatch. It is **disabled by default** through `workflows/ai-generation.json`. To enable draft generation, first configure `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` as GitHub Actions secrets, review the prompts and output count (1–10), then explicitly set `enabled` to `true`. The workflow runs tests and stores generated images plus the review queue as a temporary Actions artifact for 14 days. It does not upload to public IPFS, mint, list, or sell anything. Cloudflare usage may incur charges or be subject to account limits; verify current pricing/free allowance before enabling.
+
 ## Creator Studio
 Run `npm run studio` to generate the local-first creator page at `dist/gallery/index.html`. It previews the collection and lets you select an image, enter its title and description, and download an NFT metadata draft.
 
