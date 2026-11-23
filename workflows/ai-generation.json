@@ -1,0 +1,33 @@
+{
+  "enabled": false,
+  "provider": "cloudflare-workers-ai",
+  "model": "@cf/black-forest-labs/flux-1-schnell",
+  "prompt": "Create original, collector-grade digital fine art for NEXORIUM. Explore surreal worlds, impossible architecture, mysterious civilizations, speculative artifacts, cosmic landscapes and unfamiliar forms. Each result must have a coherent visual concept, strong composition, rich detail and no text, logos, watermarks, copyrighted characters or imitation of living artists.",
+  "prompt_variations": [
+    "Visual direction: impossible architecture floating above an alien ocean, cinematic scale, intricate material details.",
+    "Visual direction: an unknown civilization's ceremonial artifact, museum-grade product photography, surreal symbolism.",
+    "Visual direction: a dreamlike cosmic landscape with unusual geology, atmospheric depth and a striking focal point.",
+    "Visual direction: a mysterious non-human ecosystem, biologically imaginative forms, sophisticated fine-art composition.",
+    "Visual direction: a futuristic relic from a civilization that never existed, tactile surfaces and dramatic lighting."
+  ],
+  "negative_prompt": "watermark, signature, logo, text, typography, copied composition, copyrighted character, brand mark, low resolution, blurry, malformed anatomy",
+  "output": {
+    "count": 10,
+    "format": "png",
+    "width": 1024,
+    "height": 1024
+  },
+  "metadata": {
+    "title_style": "curatorial",
+    "description_style": "collector_focused",
+    "tags": [
+      "NEXORIUM",
+      "AI art",
+      "surreal",
+      "original digital art"
+    ]
+  },
+  "rights_review_required": true,
+  "quality_review_required": true,
+  "publish_mode": "draft_only"
+}
