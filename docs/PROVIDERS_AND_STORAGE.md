@@ -26,14 +26,14 @@ The first storage adapter uses Pinata's documented public file upload endpoint (
 Required server-side environment variable:
 - `PINATA_JWT`
 
-To pin an artwork, it must already be in `collection.json` and its entry in `reviews/review-status.json` must explicitly set both `rights_confirmed: true` and `owner_approved: true`. Then run `npm run pin:approved -- "Artwork title"`. This uploads the file to public IPFS, so do not approve private or unreviewed material. The command records the returned CID.
+To pin an artwork, it must already be in `collection.json` and its entry in `reviews/review-status.json` must explicitly set both `rights_confirmed: true` and `owner_approved: true`. Then run `npm run pin:approved -- "Artwork title"`. The command uploads the image first, persists its CID, creates ERC-721-style JSON metadata that points to the image CID, and uploads that metadata JSON as a second public IPFS file. It records both `image_cid` / `image_uri` and `metadata_cid` / `metadata_uri`. If metadata upload fails after the image succeeds, the saved image CID is reused on retry to avoid duplicate image uploads. Do not approve private or unreviewed material.
 
 Pinata credentials must never be committed. Public IPFS content can be copied and remain accessible beyond the lifetime of the account; uploading is not a reversible private draft operation.
 
 ## Not yet implemented
 
 - automatic AI title/description generation;
-- automatic collection metadata CID replacement and batch upload;
+- batch upload of a complete collection and collection-level metadata CID replacement;
 - public gallery hosting/authentication;
 - marketplace mint/list integrations;
 - wallet connection and transaction signing;
