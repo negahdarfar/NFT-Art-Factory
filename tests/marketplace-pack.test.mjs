@@ -11,7 +11,7 @@ test("marketplace pack generates draft-only JSON, CSV and checklist", () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), "nft-marketplace-"));
   try {
     fs.copyFileSync(path.join(root, "collection.example.json"), path.join(temp, "collection.json"));
-    fs.writeFileSync(path.join(temp, "marketplaces.json"), JSON.stringify({ platforms:["opensea","rarible"], chain:"base", currency:"ETH", price:null }));
+    fs.writeFileSync(path.join(temp, "marketplaces.json"), JSON.stringify({ platforms:["opensea","rarible","objkt"], chain:"base", currency:"ETH", price:null }));
     fs.mkdirSync(path.join(temp, "scripts"));
     fs.copyFileSync(path.join(root, "scripts", "marketplace-pack.mjs"), path.join(temp, "scripts", "marketplace-pack.mjs"));
     const run = spawnSync(process.execPath, [path.join(temp, "scripts", "marketplace-pack.mjs")], { encoding:"utf8" });
@@ -21,7 +21,14 @@ test("marketplace pack generates draft-only JSON, CSV and checklist", () => {
     assert.equal(data.publicationMode, "draft_only");
     assert.equal(data.items.length, 1);
     assert.equal(data.items[0].listing.suggestedPrice, null);
-    assert.deepEqual(data.items[0].marketplaces.map(x => x.id), ["opensea","rarible"]);
+    assert.deepEqual(data.items[0].marketplaces.map(x => x.id), ["opensea","rarible","objkt"]);
+    assert.equal(data.items[0].objkt.network, "tezos");
+    assert.equal(data.items[0].objkt.tokenStandard, "FA2");
+    assert.equal(data.items[0].objkt.metadataStandard.join(","), "TZIP-16,TZIP-21");
+    assert.equal(data.items[0].objkt.metadata.artifactUri, "ipfs://REPLACE_WITH_PINATA_IMAGE_CID");
+    const objktDraft = JSON.parse(fs.readFileSync(path.join(out, "objkt-token-metadata-drafts.json"), "utf8"));
+    assert.equal(objktDraft.standard, "TZIP-21");
+    assert.equal(objktDraft.publicationMode, "draft_only");
     assert.match(fs.readFileSync(path.join(out, "listing-drafts.csv"), "utf8"), /Artwork 001/);
     assert.match(fs.readFileSync(path.join(out, "marketplace-checklist.md"), "utf8"), /wallet/);
   } finally { fs.rmSync(temp, { recursive:true, force:true }); }
