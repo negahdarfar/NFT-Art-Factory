@@ -153,7 +153,7 @@ if (selected.includes("objkt")) {
       "Validate the final token metadata with objkt's official metadata validator.",
       "This file does not deploy an FA2 contract, mint a token, or create a listing."
     ]
-  }, null, 2) + "\\n");
+  }, null, 2) + "\n");
 }
 fs.writeFileSync(path.join(outDir, "marketplace-checklist.md"), `# Marketplace publication checklist
 
