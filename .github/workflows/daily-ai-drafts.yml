@@ -1,6 +1,12 @@
 name: Daily AI Artwork Drafts
 
 on:
+  push:
+    paths:
+      - ".github/workflows/daily-ai-drafts.yml"
+      - "scripts/generate.mjs"
+      - "workflows/**"
+      - "README.md"
   workflow_dispatch:
   schedule:
     - cron: "0 7 * * *"
